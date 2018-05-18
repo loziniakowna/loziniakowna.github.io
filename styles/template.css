@@ -185,7 +185,11 @@ body {
 
 .content__text--small {
 	font-size: 18px;
-	/*padding: 48px 0px;*/
+}
+
+.content__text--big {
+	font-size: 18px;
+	padding-top: 48px;
 }
 
 .content__text--center {
@@ -224,6 +228,11 @@ body {
 	transform: rotateY(180deg);
 }
 
+.contact__link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
 
 @media all and (min-width: 600px) {
 	.header {
@@ -256,6 +265,10 @@ body {
 	.content__text,
 	.content__text--link {
 		font-size: 24px;
+	}
+
+	.content__text--small {
+		font-size: 18px;
 	}
 
 	.content__text--big {
@@ -305,11 +318,6 @@ body {
 	.contact__icon {
 		padding-left: 12px;
 		transform: rotateY(180deg);
-	}
-
-	.contact__link {
-		text-decoration: none;
-		color: #FFFFFF;
 	}
 
 	.design {
