@@ -1,0 +1,113 @@
+.banner--represents {
+	background-image: url(../images/represents1_vc.jpg);
+	height: 300px;
+}
+
+.map {
+	position: relative;
+	width: 90%;
+	margin: auto;
+	padding: 48px 0px;
+}
+
+.map__img {
+	width: 100%;
+}
+
+.map__box {
+	cursor: pointer;
+}
+
+.map__marker {
+	font-size: 24px;
+	color: #F15056;
+	position: absolute;
+}
+
+.map__marker--selected {
+	color: #770000;
+}
+
+#marker__austria {
+	top: 32%;
+	left: 50%;
+}
+
+#marker__italy {
+	top: 36%;
+	left: 49%;
+}
+
+#marker__egipt {
+	top: 45%;
+	left: 54%;
+}
+
+#marker__turkey {
+	top: 38%;
+	left: 55%;
+}
+
+#marker__china {
+	top: 40%;
+	left: 75%;
+}
+
+.map__popup {
+	background-color: #F5F5F5;
+	border-radius: 3px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 12px 24px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+.map__popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #F5F5F5 transparent transparent transparent;
+}
+
+.map__popup--visible {
+	display: block;
+}
+
+#popup__austria {
+	top: 11%;
+	left: 42%;
+}
+
+#popup__italy {
+	/*top: 26%;
+	left: 41%;*/
+}
+
+#popup__egipt {
+	top: 36%;
+	left: 46%;
+}
+
+#popup__turkey {
+	top: 29%;
+	left: 47%;
+}
+
+#popup__china {
+	top: 32%;
+	left: 67%;
+}
+
+.map__text{
+	font-size: 12px;
+}
+
+.map__text--bold {
+	font-weight: 700;
+}
+

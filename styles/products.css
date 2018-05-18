@@ -1,0 +1,182 @@
+.banner--products {
+	background-image: url(../images/products_vc.jpg);
+	height: 300px;
+}
+
+.accordion {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	line-height: 60px;
+	font-size: 12px;
+	color: #FFFFFF;
+	padding: 48px 0px;
+}
+
+.accordion__header {
+	border-bottom: 1px solid #EFEFEF;
+	height: 59px;
+	background-color: #696969;
+	margin: auto;
+	padding: 0px 12px;
+	cursor: pointer;
+}
+
+.accordion__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.accordion__item {
+	/*flex-basis: 30%;*/
+}
+
+.accordion__name {
+	flex: 2
+}
+
+.accordion__detail {
+	flex: 1;
+	text-align: center;
+}
+
+.accordion__detail--right {
+	flex: 2;
+	text-align: right;
+}
+
+.accordion__link {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.accordion__header--active {
+	background-color: #B22121;
+}
+
+.accordion__category {
+	border-bottom: 1px solid #EFEFEF;
+	min-height: 59px;
+	background-color: #909090;
+	width: 90%;
+	margin: auto;
+	padding: 0px 12px;
+	cursor: pointer;
+	line-height: 14px;
+	align-items: center;
+}
+
+.accordion__category--active {
+	background-color: #CC3A3A;
+}
+
+.accordion__brand {
+	min-height: 96px;
+	width: 88%;
+	background-color: #EFEFEF;
+	color: #434343;
+	margin: auto;
+	padding: 0px 12px;
+}
+
+.accordion__brand:not(:last-child) {
+	border-bottom: 1px solid #909090;
+}
+
+.accordion__icon {
+	margin-right: 8px;
+}
+
+.product{
+	display: flex;
+}
+
+.product__description {
+	flex: 5;
+}
+
+.product__download {
+	flex: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #707070;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.product__icon {
+	font-size: 48px
+}
+
+.product__link,
+.product__link:visited {
+	color: #707070;
+	cursor: pointer;
+}
+
+.product__link:hover {
+	color: #CC3A3A;
+}
+
+.product__text {
+	line-height: 48px;
+}
+
+.product__text--red {
+	color: #CC3A3A;
+}
+
+
+@media all and (min-width: 600px) {
+	.accordion {
+		width: 90%;
+		line-height: 60px;
+		font-size: 16px;
+	}
+
+	.accordion__header {
+		height: 59px;
+		padding: 0px 24px;
+	}
+
+	.accordion__category {
+		padding: 0px 24px;
+		line-height: 60px;
+	}
+
+	.accordion__brand {
+		height: 144px;
+		padding: 0px 36px;
+	}
+
+	.product__text {
+		line-height: 72px;
+	}
+
+	.product__download {
+		font-size: 16px;
+		line-height: 16px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.accordion {
+		width: 80%;
+		line-height: 72px;
+		font-size: 18px;
+	}
+
+	.accordion__header {
+		height: 71px;
+		padding: 0px 60px;
+	}
+
+	.accordion__catgory {
+		padding: 0px 36px;
+	}
+
+	.accordion__link {
+	font-size: 16px;
+}

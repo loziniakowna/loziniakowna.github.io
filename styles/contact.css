@@ -1,0 +1,18 @@
+.banner--contact {
+	background-image: url(../images/contact2_vc.jpg);
+	height: 300px;
+	background-position: 0% 52%;
+}
+
+.formal__container {
+	display: flex;
+	justify-content: center;
+}
+
+.formal__item {
+	width: 45%;
+}
+
+.map {
+	padding: 48px 0px;
+}

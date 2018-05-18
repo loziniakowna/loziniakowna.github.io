@@ -1,0 +1,75 @@
+.banner--about {
+	background-image: url(../images/about_vc.jpg);
+	height: 300px;
+}
+
+.map {
+	padding: 48px 0px;
+}
+
+.map__img {
+	width: 100%;
+}
+
+.content--about {
+	min-height: 240px;
+}
+
+.gallery {
+	padding-top: 24px;
+	text-align: center;
+}
+
+.gallery__item {
+	margin: 0px 30px;
+
+	margin: 12px auto;
+}
+
+.gallery__img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.empty {
+ 	height: 96px;
+}
+
+
+@media all and (min-width: 600px) {
+	.map__img {
+		width: 50%;
+	}
+
+	.content--about {
+		min-height: 240px;
+	}
+
+	.gallery {
+		display: flex;
+		justify-content: center;
+		padding-top: 48px;
+	}
+
+	.gallery__item {
+		/*height: 252px;	*/
+		margin: 0px 30px;
+		width: 50%;
+	}
+	.gallery__img {
+		max-width: 100%;
+	}
+
+	.empty {
+	 	height: 144px;
+	}
+
+
+}
+
+@media all and (min-width: 1200px) {
+
+		.empty {
+	 	height: 276px;
+	}
+}
