@@ -69,8 +69,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(-3867px);
-            transform: translateX(-3867px);
+    -webkit-transform: translateX(-4616px); /*4544  (n x width) + (n x 24px)*/
+            transform: translateX(-4616px); 
   }
 }
 
@@ -81,8 +81,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(-3867px);
-            transform: translateX(-3867px);
+    -webkit-transform: translateX(-4616px);
+            transform: translateX(-4616px);
   }
 }
 
