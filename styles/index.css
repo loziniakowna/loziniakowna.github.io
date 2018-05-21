@@ -69,8 +69,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
+    -webkit-transform: translateX(-3867px);
+            transform: translateX(-3867px);
   }
 }
 
@@ -81,8 +81,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(-300%);
-            transform: translateX(-300%);
+    -webkit-transform: translateX(-3867px);
+            transform: translateX(-3867px);
   }
 }
 
@@ -116,10 +116,10 @@
 }
 
 .slider .slide__track {
-  -webkit-animation: scroll 20s linear infinite;
-          animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 25s linear infinite;
+          animation: scroll 25s linear infinite;
   display: flex;
-  width: 100%;
+  width: 3867px;
 }
 
 .slider .slide {

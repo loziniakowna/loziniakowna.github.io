@@ -22,7 +22,6 @@
 
 .gallery__item {
 	margin: 0px 30px;
-
 	margin: 12px auto;
 }
 
@@ -47,29 +46,21 @@
 
 	.gallery {
 		display: flex;
-		justify-content: center;
+		justify-content: space-evenly;
 		padding-top: 48px;
 	}
 
 	.gallery__item {
 		/*height: 252px;	*/
 		margin: 0px 30px;
-		width: 50%;
+		width: 30%;
 	}
 	.gallery__img {
 		max-width: 100%;
 	}
 
-	.empty {
-	 	height: 144px;
-	}
-
-
 }
 
 @media all and (min-width: 1200px) {
 
-		.empty {
-	 	height: 276px;
-	}
 }
