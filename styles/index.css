@@ -24,7 +24,8 @@
 }
 
 .box__container {
-	display: flex;
+	-ms-display: flex;
+		display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	width: 100%;
@@ -125,18 +126,19 @@
 .slider .slide {
   height: 108px;
   /*width: 250px;*/
-  display: flex;
+  -ms-display: flex;
+ 	  display: flex;
   margin: 0px 24px;
 }
 
 .slider__img {
-	object-fit: contain;
-	filter: grayscale(100%);
+	margin: auto; 
 }
 
 .cert,
 .circle {
-	display: flex;
+	-ms-display: flex;
+		display: flex;
 	align-items: center;
 	justify-content: space-around;
 	margin: auto;
@@ -148,7 +150,6 @@
 }
 
 .cert__img {
-	object-fit: contain;
 	padding: 6px 0px;
 }
 
@@ -183,7 +184,7 @@
 	.flipper{
 		perspective: 1000px;
 	}
-		/* flip the pane when hovered */
+	/* flip the pane when hovered */
 	.flipper:hover .flipper__card, .flipper.hover .flipper__card {
 		transform: rotateY(180deg);
 	}
@@ -203,6 +204,7 @@
 		backface-visibility: hidden;
 	}
 
+	/* back, initially hidden pane */
 	.back {
 		position: absolute;
 		top: 0;
@@ -224,11 +226,6 @@
 		transform: rotateY(0deg);
 	}
 
-	/* back, initially hidden pane */
-	.back {
-		
-	}
-
 }
 
 
@@ -242,7 +239,7 @@
 
 	.box__container {
 		flex-direction: row;
-		width: 100%;
+		width: 90%;
 	}
 
 	.box__item {
@@ -253,8 +250,9 @@
 	}	
 
 	.flipper__card {
-		display: flex;
-		justify-content: space-evenly;
+		-ms-display: flex;
+			display: flex;
+		justify-content: space-around;
 	}
 
 	.circle__item {
@@ -319,7 +317,6 @@
 	}
 
 	.box__container {
-		flex-direction: row;
 		width: 80%;
 		font-size: 24px;
 	}
