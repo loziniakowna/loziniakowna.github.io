@@ -164,7 +164,7 @@ body {
 }
 
 .content--wide {
-	padding: 48px 12px;
+	padding: 24px 12px;
 	background-color: rgba(190, 190, 190, 0.23);
 }
 
@@ -270,10 +270,6 @@ body {
 		font-size: 18px;
 	}
 
-	.content__text--big {
-		font-size: 32px;
-		padding-top: 96px;
-	}	
 }
 
 @media all and (min-width: 1200px) {
@@ -296,6 +292,11 @@ body {
 	.content--narrow {
 		padding: 0px 72px;
 	}
+
+	.content__text--big {
+		font-size: 32px;
+		padding-top: 96px;
+	}	
 
 	.footer {
 		height: 108px;

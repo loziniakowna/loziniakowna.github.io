@@ -90,16 +90,16 @@
 .slider {
 	margin: 24px 0px;
 	background-color: white;
-	height: 108px;
+	/*height: 108px;*/
   	overflow: hidden;
   	position: relative;
-  	padding: 0px 48px;
+  	/*padding: 0px 48px;*/
 }
 
 .slider::before, .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 108px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -124,11 +124,11 @@
 }
 
 .slider .slide {
-  height: 108px;
+  /*height: 108px;*/
   /*width: 250px;*/
-  -ms-display: flex;
- 	  display: flex;
-  margin: 0px 24px;
+/*  -ms-display: flex;
+ 	  display: flex;*/
+  margin: auto 24px;
 }
 
 .slider__img {
@@ -191,16 +191,18 @@
 
 	/* flip speed goes here */
 	.flipper__card {
-		transition: 0.6s;
-		transform-style: preserve-3d;
 		position: relative;
 		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 		margin: 12px 0px;
 		padding: 24px;
+		transition: 1s;
+		transform-style: preserve-3d;
+
 	}
 
 	/* hide back of pane during swap */
-	.front, .back {
+	.front,
+	.back {
 		backface-visibility: hidden;
 	}
 
@@ -209,11 +211,11 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		transform: rotateY(180deg);
 		/*display: block;*/
-		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 		height: 100%;
 		background-color: rgba(190, 190, 190, 0.23);
-		transform: rotateY(180deg);
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 		text-align: center;
 		padding: 12px;
 		font-size: 16px;
@@ -238,7 +240,7 @@
 	}
 
 	.box__container {
-		flex-direction: row;
+		/*flex-direction: row;*/
 		width: 90%;
 	}
 
@@ -258,9 +260,6 @@
 	.circle__item {
 		width: 144px;
 		height: 144px;
-		border-radius: 100%;
-		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-		background-size: 144px 144px;
 	}
 
 	#circle1 {
@@ -276,7 +275,7 @@
 	}
 
 	.slider {
-		margin: 24px 0px 96px 0px;
+		margin: 24px 0px 48px 0px;
 	}
 
 	.slider .slide__track {
@@ -291,10 +290,12 @@
 
 	.cert__img {
 		padding: 0px;
+		width: 120px;
 	}
 
 	.cert__img--vertical {
 		display: inline;
+		width: 100px;
 	}
 
 	.cert__img--horizontal {
@@ -324,6 +325,28 @@
 	.box__item {
 		padding: 36px;
 	}
+
+	.circle {
+		width: 90%;
+	}
+
+	.circle__item {
+		width: 192px;
+		height: 192px;
+	}
+
+	#circle1 {
+		background-size: 192px 192px;
+	}
+
+	#circle2 {
+		background-size: 192px 192px;
+	}
+
+	#circle3 {
+		background-size: 192px 192px;
+	}
+
 
 
 }
