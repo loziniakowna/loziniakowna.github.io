@@ -5,7 +5,7 @@
 
 .map {
 	position: relative;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	padding: 48px 0px;
 }
@@ -19,7 +19,7 @@
 }
 
 .map__marker {
-	font-size: 24px;
+	font-size: 18px;
 	color: #F15056;
 	position: absolute;
 }
@@ -29,28 +29,28 @@
 }
 
 #marker__austria {
-	top: 32%;
-	left: 50%;
+	top: 33%;
+	left: 18%;
 }
 
 #marker__italy {
-	top: 36%;
-	left: 49%;
+	top: 37.5%;
+	left: 17.5%;
 }
 
 #marker__egipt {
-	top: 45%;
-	left: 54%;
+	top: 48%;
+	left: 25%;
 }
 
 #marker__turkey {
-	top: 38%;
-	left: 55%;
+	top: 39%;
+	left: 27%;
 }
 
 #marker__china {
-	top: 40%;
-	left: 75%;
+	top: 44%;
+	left: 59%;
 }
 
 .map__popup {
@@ -78,31 +78,6 @@
 	display: block;
 }
 
-#popup__austria {
-	top: 11%;
-	left: 42%;
-}
-
-#popup__italy {
-	/*top: 26%;
-	left: 41%;*/
-}
-
-#popup__egipt {
-	top: 36%;
-	left: 46%;
-}
-
-#popup__turkey {
-	top: 29%;
-	left: 47%;
-}
-
-#popup__china {
-	top: 32%;
-	left: 67%;
-}
-
 .map__text{
 	font-size: 12px;
 }
@@ -111,3 +86,16 @@
 	font-weight: 700;
 }
 
+
+
+@media all and (min-width: 600px) {
+
+	.map {
+		width: 90%;
+	}
+
+	.map__marker {
+		font-size: 24px;
+	}
+
+}

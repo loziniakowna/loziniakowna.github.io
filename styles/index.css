@@ -70,8 +70,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(-4616px); /*4544  (n x width) + (n x 24px)*/
-            transform: translateX(-4616px); 
+    -webkit-transform: translateX(-4640px); /*4544  (n x width) + (n x 24px)*/
+            transform: translateX(-4640px); 
   }
 }
 
@@ -82,8 +82,8 @@
   }
 
   100% {
-    -webkit-transform: translateX(-4616px);
-            transform: translateX(-4616px);
+    -webkit-transform: translateX(-4640px);
+            transform: translateX(-4640px);
   }
 }
 
@@ -120,7 +120,7 @@
   -webkit-animation: scroll 25s linear infinite;
           animation: scroll 25s linear infinite;
   display: flex;
-  width: 3867px;
+  width: 4640px;
 }
 
 .slider .slide {
@@ -157,26 +157,38 @@
 	display: none;
 }
 
+#cert__1 {
+	order: 2;
+}
+
+#cert__2 {
+	order: 1;
+}
+
+#cert__3 {
+	order: 3;
+}
+
 .circle__item {
-	width: 100px;
-	height: 100px;
+	width: 84px;
+	height: 84px;
 	border-radius: 100%;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 #circle1 {
 	background-image: url(../images/circle1_vc.jpg);
-	background-size: 100px 100px;
+	background-size: 84px 84px;
 }
 
 #circle2 {
 	background-image: url(../images/circle2_vc.jpg);
-	background-size: 100px 100px;
+	background-size: 84px 84px;
 }
 
 #circle3 {
 	background-image: url(../images/circle3_vc.jpg);
-	background-size: 100px 100px;
+	background-size: 84px 84px;
 }
 
 @media all and (max-width: 600px) {
@@ -196,14 +208,18 @@
 		margin: 12px 0px;
 		padding: 24px;
 		transition: 1s;
-		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+				transform-style: preserve-3d;
 
 	}
 
 	/* hide back of pane during swap */
 	.front,
 	.back {
-		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+				backface-visibility: hidden;
 	}
 
 	/* back, initially hidden pane */
@@ -227,10 +243,7 @@
 		/* for firefox 31 */
 		transform: rotateY(0deg);
 	}
-
 }
-
-
 
 @media all and (min-width: 600px) {
 
@@ -280,6 +293,7 @@
 
 	.slider .slide__track {
   		-webkit-animation: scroll 30s linear infinite;
+  		   -moz-animation: scroll 30s linear infinite;
         		animation: scroll 30s linear infinite;
     }
 
@@ -300,6 +314,18 @@
 
 	.cert__img--horizontal {
 		display: none;
+	}
+
+	#cert__1 {
+		order: 1;
+	}
+
+	#cert__2 {
+		order: 2;
+	}
+
+	#cert__3 {
+		order: 3;
 	}
 }
 
@@ -346,8 +372,6 @@
 	#circle3 {
 		background-size: 192px 192px;
 	}
-
-
 
 }
 

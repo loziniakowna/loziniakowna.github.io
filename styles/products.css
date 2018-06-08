@@ -15,7 +15,7 @@
 
 .accordion__header {
 	border-bottom: 1px solid #EFEFEF;
-	height: 59px;
+	min-height: 59px;
 	background-color: #696969;
 	margin: auto;
 	padding: 0px 12px;
@@ -147,7 +147,6 @@
 	}
 
 	.accordion__brand {
-		/*height: 144px;*/
 		padding: 0px 36px;
 	}
 
