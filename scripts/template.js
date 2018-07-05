@@ -3,10 +3,10 @@
 
    $(document).ready(function() {
 
-        var menuClosed = $(".fa-plus-circle"),
-            menuOpened = $(".fa-minus-circle"),
+        var menuClosed = $(".fa-bars"),
+            menuOpened = $(".fa-times"),
             menu = $(".menu"),
-            closed = menu.is('.fa-plus-circle'),
+            closed = menu.is('.fa-bars'),
             nav = $(".nav");
 
         // if (closed) {

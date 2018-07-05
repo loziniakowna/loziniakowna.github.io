@@ -19,13 +19,14 @@
 }
 
 .map__marker {
-	font-size: 18px;
+	font-size: 24px;
 	color: #F15056;
 	position: absolute;
 }
 
 .map__marker--selected {
-	color: #770000;
+	/*color: #770000;*/
+	color: #a8383c;
 }
 
 #marker__austria {

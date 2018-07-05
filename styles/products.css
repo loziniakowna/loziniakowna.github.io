@@ -14,12 +14,13 @@
 }
 
 .accordion__header {
-	border-bottom: 1px solid #EFEFEF;
+	border-bottom: 1px solid #696969;
 	min-height: 59px;
-	background-color: #696969;
+	background-color: #EFEFEF;
 	margin: auto;
 	padding: 0px 12px;
 	cursor: pointer;
+	color: #696969;
 }
 
 .accordion__container {
@@ -51,7 +52,9 @@
 }
 
 .accordion__header--active {
-	background-color: #B22121;
+	/*background-color: #B22121;*/
+	background-color: #a8383c;
+	color: #FFFFFF;
 }
 
 .accordion__category {
@@ -67,7 +70,8 @@
 }
 
 .accordion__category--active {
-	background-color: #CC3A3A;
+	/*background-color: #CC3A3A;*/
+	background-color: #F15056;
 }
 
 .accordion__brand {
