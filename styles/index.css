@@ -11,7 +11,7 @@
 	font-family: 'Cinzel', serif;
 	/*font-family: 'Markazi Text', serif;*/
 	/*font-family: 'Oswald', sans-serif;*/
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 600;
 	/*text-transform: uppercase;*/
 	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -27,9 +27,9 @@
 
 .buttons {
 	display: flex;
-	padding: 24px;
+	padding: 12px;
 	justify-content: space-around;
-	width: 55%;
+	width: 90%;
 	margin: auto;
 	cursor: pointer;
 }
@@ -38,7 +38,7 @@
 	text-decoration: none;
 	background-color: rgba(256,256,256,0.8);
 	color: #F15056;
-	padding: 12px 24px;
+	padding: 12px 12px;
 }	
 
 .buttons__link:hover {
@@ -332,6 +332,19 @@
 		padding: 24px;
 	}
 
+	.buttons {
+		padding: 24px;
+		width: 55%;
+	}
+
+	.buttons__link {
+		text-decoration: none;
+		background-color: rgba(256,256,256,0.8);
+		color: #F15056;
+		padding: 12px 24px;
+	}	
+
+
 	.box__container {
 		flex-direction: row;
 		justify-content: space-around;
@@ -363,12 +376,22 @@
 		display: none;
 	}
 
+	.box__title {
+		cursor: auto;
+	}
+
 	/*.flipper__card {
 		-ms-display: flex;
 			display: flex;
 		justify-content: space-around;
 	}
 */
+
+	.box__title:hover,
+	.box__title:active {
+		color: #505050;
+	}
+
 	.circle__item {
 		width: 144px;
 		height: 144px;
