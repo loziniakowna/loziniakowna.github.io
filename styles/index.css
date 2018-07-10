@@ -418,13 +418,13 @@
     }
 
     .cert {
-		width: 60%;
+		width: 90%;
 		flex-direction: row;
 	}
 
 	.cert__img {
-		padding: 0px;
-		width: 120px;
+		padding: 6px;
+		width: 144px;
 	}
 
 	.cert__img--vertical {
@@ -486,6 +486,19 @@
 	#circle3 {
 		background-size: 240px 240px;
 	}
+
+	.cert {
+		width: 60%;
+	}
+
+	.cert__img {
+		width: 180px;
+	}
+
+	.cert__img--vertical {
+		width: 120px;
+	}
+
 
 }
 
