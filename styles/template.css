@@ -91,6 +91,9 @@ body {
 	position: absolute;
 	top: 17px;
 	right: 12px;
+}
+
+.language__img {
 	height: 18px;
 }
 
@@ -154,12 +157,11 @@ body {
 .banner__box {
 	position: relative;
 	margin: auto;
+	padding: 12px 0px;
 	max-width: 100%;	
 	height: 100%;
 	background-color: rgba(80, 80, 80, 0.45);
-	/*text-align: left;*/
 	display: flex;
-	/*align-items: flex-end;*/
 	flex-direction: column;
 }
 
@@ -298,14 +300,7 @@ body {
 	}
 
 	.banner__box {
-		position: relative;
-		margin: auto;
-		max-width: 100%;	
-		height: 100%;
-		padding: 108px 144px;
-		background-color: rgba(80, 80, 80, 0.45);
-		display: flex;
-		/*align-items: flex-end;*/
+		padding: 84px 144px;
 	}
 
 	.content--narrow {

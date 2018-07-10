@@ -5,6 +5,10 @@
 	background-size: cover;
 }
 
+.banner__item {
+	padding: 12px;
+}
+
 .banner__text {
 	/*font-family: 'Roboto Slab', serif;*/
 	/*font-family: 'Playfair Display SC', serif;*/
@@ -17,7 +21,7 @@
 	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 	margin: auto;
 	padding: 12px;
-	line-height: 2em;
+	line-height: 1.5em;
 	/*font-style: italic;*/
 }
 
@@ -329,7 +333,7 @@
 
 	.banner__text {
 		font-size: 32px;
-		padding: 24px;
+		padding: 12px;
 	}
 
 	.buttons {

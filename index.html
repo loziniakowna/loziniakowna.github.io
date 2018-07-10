@@ -21,12 +21,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
 
 
+
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+
 </head>
 <body>
 	<div class="mainWrapper">
 		<div class="wrapper">
 			<header class="header wrapper--narrow wrapper--white">
-				<img class="language" src="images/en1.png"></img>
+				<a href="ENindex.html" class="language"><img class="language__img" src="images/en.png"></img></a>
 				<span class="fas fa-bars menu"></span>
 				<span class="fas fa-times menu menu--hidden"></span>
 				<div class="logo header__item">
@@ -43,7 +53,7 @@
 			
 			<div class="banner banner--index">
 				<div class="banner__box">
-					<div class="banner__text banner__item banner__text--white">"Victoria Chemicals Sp. z o. o."</br>Sprawdzony partner na rynku produktów chemicznych</div>
+					<div class="banner__item"><p class="banner__text banner__text--white">"Victoria Chemicals Sp. z o. o."</p></br><p class="banner__text banner__text--white">Sprawdzony partner</br> na rynku produktów chemicznych</p></div>
 					<div class="banner__item buttons">
 						<a href="products.html" class="buttons__link">Poznaj ofertę</a>
 						<a href="contact.html" class="buttons__link">Skontaktuj się z nami</a>
@@ -218,8 +228,8 @@
 		</div>
 		<div class="footer">
 			<div class="footer__item contact">
-				<p class="contact__item"><span class="fas fa-phone contact__icon"></span>+48 22 33 88 900</p>
-				<p class="contact__item"><span class="fas fa-envelope contact__icon"></span>office@victoriachemicals.com</p> 
+				<p class="contact__item"><a href="tel:+48223388900" class="contact__link"><span class="fas fa-phone contact__icon"></span>+48 22 33 88 900</a></p>
+				<p class="contact__item"><a class="contact__link" href="mailto:office@victoriachemicals.com"><span class="fas fa-envelope contact__icon"></span>office@victoriachemicals.com</a></p> 
 			</div>
 			<div class="footer__item design">
 				<p>code & design: ROBOTIX</p>
