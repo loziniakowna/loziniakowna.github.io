@@ -170,7 +170,7 @@ body {
 }
 
 .content--wide {
-	padding: 48px;
+	padding: 36px;
 	background-color: rgba(190, 190, 190, 0.23);
 }
 
@@ -269,6 +269,10 @@ body {
 
 	.fas.menu {
 		display: none;
+	}
+
+	.content--wide {
+		padding: 48px;
 	}
 
 	.content__header {

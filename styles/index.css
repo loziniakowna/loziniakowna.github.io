@@ -29,6 +29,10 @@
 	color: rgba(256,256,256,0.9);
 }
 
+.banner__text--nowrap {
+	white-space: nowrap;
+}
+
 .buttons {
 	display: flex;
 	padding: 12px;
