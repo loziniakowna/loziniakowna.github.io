@@ -1,6 +1,5 @@
 (function($) {
 
-
    $(document).ready(function() {
 
         var boxDesc = $(".box__description"),
@@ -17,34 +16,23 @@
 
             text.toggleClass('box__text--visible');
             title.toggleClass('box__title--selected');
-
             icon.toggleClass('box__icon--visible');
 
-            var boxCircle = box.children('.circle__item');
-            var circleIndex = boxCircle.index();
-            var circleItem = that.prev(".circle__item");
-            var circleId = that.prev().attr("id");
-
-            console.log(boxCircle);
-            console.log(circleIndex);
-            console.log(circle);
-            console.log(circleId);
-            console.log(icon);
-
+            var boxCircle = box.children('.circle__item'),
+                circleIndex = boxCircle.index(),
+                circleItem = that.prev(".circle__item"),
+                circleId = that.prev().attr("id");
 
             if (circle.hasClass('.circle__item--selected')) {
                     circle.css('visibility', 'visible');
                     arrow.css('display', 'inline');
                     circle.removeClass('.circle__item--selected');             
-
             } else {
                 circle.css('visibility', 'hidden');
                 arrow.css('display', 'none');
                 circle.addClass('.circle__item--selected');
-            }
+            };
             
-
-
         });
 
     });

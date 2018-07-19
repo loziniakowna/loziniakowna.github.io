@@ -1,14 +1,11 @@
 * {
   margin: 0;
   padding: 0;	
-  /*font-family: 'Roboto', sans-serif;*/
-  /*font-family: 'Lato', sans-serif;*/
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-size: 12px;
-
 }
 
 body {
@@ -49,7 +46,6 @@ body {
 
 .header__item {
 	background-color: #FFFFFF;
-	padding: 0px 12px;
 	display: flex;
 }
 
@@ -110,6 +106,7 @@ body {
 .nav__link--contact {
 	background-color: #F15056;
 	color: #FFFFFF;
+	margin: 0px 10px;
 	padding-left: 26px;
 	padding-right: 26px; 
 	font-weight: 700;
@@ -148,6 +145,10 @@ body {
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
+}
+
+.banner--short {
+	height: 300px;
 }
 
 .banner__img {
@@ -237,11 +238,17 @@ body {
 	transform: rotateY(180deg);
 }
 
-.contact__link {
+.link {
 	text-decoration: none;
+}
+
+.contact__link {
 	color: #FFFFFF;
 }
 
+.design__link {
+	color: #BEBEBE;
+}
 
 @media all and (min-width: 600px) {
 	* {
@@ -321,11 +328,9 @@ body {
 
 	.content__text--big {
 		font-size: 24px;
-		/*padding-top: 96px;*/
 	}	
 
 	.footer {
-		/*height: 108px;*/
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -350,5 +355,4 @@ body {
 	.design {
 		font-size: 18px;
 	}
-
 }

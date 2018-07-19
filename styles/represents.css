@@ -1,6 +1,5 @@
 .banner--represents {
 	background-image: url(../images/represents1_vc.jpg);
-	height: 300px;
 }
 
 .map {
@@ -25,7 +24,6 @@
 }
 
 .map__marker--selected {
-	/*color: #770000;*/
 	color: #a8383c;
 }
 
@@ -87,10 +85,7 @@
 	font-weight: 700;
 }
 
-
-
 @media all and (min-width: 600px) {
-
 	.map {
 		width: 90%;
 	}
@@ -98,5 +93,4 @@
 	.map__marker {
 		font-size: 24px;
 	}
-
 }

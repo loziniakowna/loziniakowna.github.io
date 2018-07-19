@@ -1,6 +1,5 @@
 (function($) {
 
-
    $(document).ready(function() {
 
         var boxes = $(".map__box"),
@@ -28,7 +27,6 @@
             marker.toggleClass('map__marker--selected', !selected);
             popup.toggleClass('map__popup--visible', !selected);
             
-
         });
 
     });

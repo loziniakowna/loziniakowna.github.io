@@ -1,6 +1,8 @@
 (function($) {
 
-    var collapseAll = true;
+    var collapseAll = true,
+        showProducts = document.getElementById("showProducts").getAttribute("data-show"),
+        hideProducts = document.getElementById("showProducts").getAttribute("data-hide");
 
    $(document).ready(function() {
 
@@ -16,9 +18,9 @@
         function collapseCategories(){
             arrows.removeClass('fa-angle-up');
             arrows.addClass('fa-angle-down');
-            descriptions.text('Pokaż produkty');
+            descriptions.text(showProducts);
             categories.removeClass("accordion__category--active");
-        }
+        };
 
         headers.on("click", function() {
 
@@ -27,7 +29,7 @@
                 collapseCategories();
                 items.stop().slideUp(300);
                 products.stop().slideUp(300);   //stop() - Stop the currently-running animation on the matched elements and then slideUp
-            }
+            };
 
             var that = $(this),
                 item = that.next(".accordion__item"),
@@ -39,7 +41,7 @@
                 item.stop().slideDown(300);
             } else {
                 item.stop().slideUp(300);
-            }
+            };
 
         });
 
@@ -51,26 +53,25 @@
                 isVisible = product.is(":visible"),
                 arrow = that.children('.accordion__detail').children('.fas'),      
                 description = that.children('.accordion__detail').children('.accordion__link');
-                // arrowDown = that.children('.content__text--link').children('.arrow--down'),
 
             if(collapseAll) {  
                 collapseCategories();
-                products.stop().slideUp(300);   //stop() - Stop the currently-running animation on the matched elements.
-            }
+                products.stop().slideUp(300);
+            };
 
             that.toggleClass("accordion__category--active", !isVisible);
 
             if(!isVisible) {
                 product.stop().slideDown(300);
-                arrow.removeClass('fa-angle-down')
+                arrow.removeClass('fa-angle-down');
                 arrow.addClass('fa-angle-up');
-                description.text('Zamknij');
+                description.text(hideProducts);
             } else {
                 product.stop().slideUp(300);
                 arrow.removeClass('fa-angle-up');
                 arrow.addClass('fa-angle-down');
-                description.text('Pokaż produkty');
-            }
+                description.text(showProducts);
+            };
         });
 
     });

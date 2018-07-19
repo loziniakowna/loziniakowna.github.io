@@ -1,6 +1,5 @@
 (function($) {
 
-
    $(document).ready(function() {
 
         var menuClosed = $(".fa-bars"),
@@ -8,10 +7,6 @@
             menu = $(".menu"),
             closed = menu.is('.fa-bars'),
             nav = $(".nav");
-
-        // if (closed) {
-        //     nav.addClass('nav--hidden');
-        // }
 
         menuClosed.on("click", function() {
             nav.addClass('nav--visible');
@@ -23,8 +18,8 @@
             nav.removeClass('nav--visible');
             menuOpened.addClass('menu--hidden');
             menuClosed.removeClass('menu--hidden');
-
         });
+        
     });
 
 })(jQuery);
